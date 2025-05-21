@@ -1,1 +1,135 @@
-# hometask-spinwise
+# Task 1: Based on requirements create 3 manual test cases
+
+Test case 1
+
+Title: Successful registration using a valid username, email, and password
+
+Steps:
+  1. Open `https://auth-home-task.vercel.app/`
+  2. Click the `Go to Registration` button
+  3. Enter a valid username "username987" for the `Username` input field
+  4. Enter a valid email address "email@email.com" for the `Email` input field
+  5. Enter a valid password "secretPassword4" for the `Password` input field
+  7. Re-enter the same password for the `Confirm Password` input field
+  8. Click the `Register` button 
+
+Expected result:
+  1. User is redirected to the Home Page
+  2. Success message is displayed: "You have registered successfully!"
+
+Actual result: As expected
+
+---
+
+Test case 2
+
+Title: Username can't be less than 3 characters
+
+Steps:
+  1. Open `https://auth-home-task.vercel.app/`
+  2. Click the `Go to Registration` button
+  3. Enter "aa" for the `Username` input field
+  4. Click the `Register` button 
+
+Expected result:
+  1. An error message is displayed below the `Username` input field
+  2. Form is not submitted
+
+Actual result: As expected
+
+---
+
+Test case 3
+
+Title: Password and confirm password input fields don't match
+
+Steps:
+  1. Open `https://auth-home-task.vercel.app/`
+  2. Click the `Go to Registration` button
+  3. Enter a valid password "secretPassword1" for the `Password` input field
+  4. Enter a mismatching password "secretPassword2" for the `Confirm Password` input field
+  5. Click the `Register` button 
+
+Expected result: 
+  1. An error message is displayed below the `Confirm Password` input field
+  2. Form is not submitted
+
+Actual result: As expected
+
+# Task 2: Report at least 1 Bug You have found during the testing
+
+Bug ID: 1
+
+Title: Input fields are not highlighted when validation fails.
+
+Env:
+  1. OS: Windows 11
+  2. Browser: Version 1.78.102 Chromium: 136.0.7103.113 (Official Build) (64-bit)
+
+Steps to reproduce:
+  1. Open `https://auth-home-task.vercel.app/`
+  2. Click the `Go to Registration` button
+  3. Click the `Register` button
+
+Expected result: 
+Input fields are highlighted
+
+Actual result: 
+Input fields are not highlighted
+
+<img src="https://github.com/user-attachments/assets/721dce75-59a9-4a25-b5fd-f79b2f34f537">
+
+---
+
+Bug ID: 2 (TODO)
+
+Title: Input fields have a incorrect texts displayed when input validation fails
+
+Env:
+  1. OS: Windows 11
+  2. Browser: Version 1.78.102 Chromium: 136.0.7103.113 (Official Build) (64-bit)
+
+Steps to reproduce:
+  todo
+
+Expected result: 
+  todo
+
+Actual result:
+  todo
+
+<img src="https://github.com/user-attachments/assets/f7dbe715-03e2-4059-afeb-c50046b2df51" width="450" height="450">
+
+---
+
+Bug ID: 3 (TODO)
+
+Title: Browser email validation blocks other input field errors when clicking the register button
+
+Env:
+  1. OS: Windows 11
+  2. Browser: Version 1.78.102 Chromium: 136.0.7103.113 (Official Build) (64-bit)
+
+Steps to reproduce:
+
+ todo
+
+Expected result: 
+todo
+
+Actual result: 
+todo
+
+<img src="https://github.com/user-attachments/assets/4a5af71c-ccc7-42a6-bb8e-e04851ce5ddd" width="450" height="450">
+
+# Task 3: Based on requirements automate 1 manual test case using playwright
+  TODO
+# Task 4: Add points to improve form's UI/UX
+Suggested improvments:
+  1. Add an option to "Show Password" for the Password and Confirm Password fields.
+  2. Using Lighthouse to check "Accessibility", form input fields are missing the `aria-label` attribute.
+  3. Provide real time feedback on input validations, displaying or hiding error messages as the user types, to eliminate the need for clicking 'Register' to see feedback.
+# Task 5: Anything You would improve/specify more in the existing requirements
+  1. ...
+# Task 6: What else can be tested?
+  1. Secrurty??
