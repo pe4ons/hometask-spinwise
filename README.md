@@ -151,6 +151,6 @@ Suggested improvments:
   1. The `Field Validations:` section from the requirements could be more specific. For example, "Expected Field Validations error texts" would clearly communicate that these are expected texts that should be displayed in case of an error.
 # Task 6: What else can be tested?
   1. Could do performance testing. For example, do some load testing to check how the page operates under the expected amount of users.
-  2. Usful to also test how the page works on a mobile device. Is the autofill correctly suggested? How form reacts to different screen sizes and to horizontal screen orientation.
+  2. Useful to also test how the page works on a mobile device. Is the autofill correctly suggested? How form reacts to different screen sizes and to horizontal screen orientation.
   3. Check if the page is working on most popular browsers.
   4. From a security standpoint its important to check if inputs are sanitized to avoid cross-site scripting attacks.
