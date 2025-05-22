@@ -148,7 +148,7 @@ Suggested improvments:
   2. Using Lighthouse to check "Accessibility" form input fields are missing the `aria-label` attribute.
   3. Provide real time feedback on input validations, displaying or hiding error messages as the user types, to eliminate the need for clicking 'Register' to see feedback.
 # Task 5: Anything You would improve/specify more in the existing requirements
-  1. The `Field Validations:` section from the requirements could be more specific. For example, "Field Validations error texts" would clearly communicate that these are expected texts that should be displayed in case of an error.
+  1. The `Field Validations:` section from the requirements could be more specific. For example, "Expected Field Validations error texts" would clearly communicate that these are expected texts that should be displayed in case of an error.
 # Task 6: What else can be tested?
   1. Could do performance testing. For example, do some load testing to check how the page operates under the expected amount of users.
   2. Usful to also test how the page works on a mobile device. Is the autofill correctly suggested? How form reacts to different screen sizes and to horizontal screen orientation.
