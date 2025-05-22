@@ -23,7 +23,7 @@ export class RegisterPage {
     async fillRegistrationForm(userName: string, email: string) {
         const password = process.env.USER_PASSWORD;
         if (!password) {
-            throw new Error('password not set in .env file')
+            throw new Error('USER_PASSWORD is not set in .env file')
         }
 
         await this.username.fill(userName);
