@@ -8,6 +8,7 @@ test.describe('Registration page tests', () => {
         await registerPage.openRegisterPage();
         await registerPage.fillRegistrationForm('Mike', 'mike@mike.com');
         await registerPage.registerBtn.click();
+        await expect(page.getByText('Welcome to the Home Page!')).toBeVisible();
         await expect(page.getByText('You have registered successfully!')).toBeVisible();
     })
 })
