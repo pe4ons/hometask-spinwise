@@ -139,14 +139,18 @@ https://github.com/user-attachments/assets/268eb395-b023-4fc3-842d-2d81b50d2ade
 
   1. Using `pnpm` for the project. `pnpm` can be installed using `npm` https://pnpm.io/installation#using-npm
   2. Run `pnpm install`.
-  3. To run test `pnpm exec playwright test registerPage --headed`.
+  3. Setup `.env` file (check `.env.example`) 
+  4. To run test `pnpm exec playwright test registerPage --headed`.
 
 # Task 4: Add points to improve form's UI/UX
 Suggested improvments:
   1. Add an option to "Show Password" for the Password and Confirm Password fields.
-  2. Using Lighthouse to check "Accessibility", form input fields are missing the `aria-label` attribute.
+  2. Using Lighthouse to check "Accessibility" form input fields are missing the `aria-label` attribute.
   3. Provide real time feedback on input validations, displaying or hiding error messages as the user types, to eliminate the need for clicking 'Register' to see feedback.
 # Task 5: Anything You would improve/specify more in the existing requirements
   1. The `Field Validations:` section from the requirements could be more specific. For example, "Field Validations error texts" would clearly communicate that these are expected texts that should be displayed in case of an error.
 # Task 6: What else can be tested?
-  1. 
+  1. Could do performance testing. For example, do some load testing to check how the page operates under the expected amount of users.
+  2. Usful to also test how the page works on a mobile device. Is the autofill correctly suggested? How form reacts to different screen sizes and to horizontal screen orientation.
+  3. Check if the page is working on most popular browsers.
+  4. From a security standpoint its important to check if inputs are sanitized to avoid cross-site scripting attacks.
