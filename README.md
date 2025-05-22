@@ -154,3 +154,4 @@ Suggested improvments:
   2. Useful to also test how the page works on a mobile device. Is the autofill correctly suggested? How form reacts to different screen sizes and to horizontal screen orientation.
   3. Check if the page is working on most popular browsers.
   4. From a security standpoint its important to check if inputs are sanitized to avoid cross-site scripting attacks.
+  5. On the backend verify that user data like passwords are hashed.
