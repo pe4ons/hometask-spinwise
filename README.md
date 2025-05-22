@@ -32,7 +32,7 @@ Steps:
   4. Click the `Register` button 
 
 Expected result:
-  1. An error message is displayed below the `Username` input field
+  1. An error message is displayed below the Username input field
   2. Form is not submitted
 
 Actual result: As expected
@@ -51,7 +51,7 @@ Steps:
   5. Click the `Register` button 
 
 Expected result: 
-  1. An error message is displayed below the `Confirm Password` input field
+  1. An error message is displayed below the Confirm Password input field
   2. Form is not submitted
 
 Actual result: As expected
@@ -69,19 +69,18 @@ Env:
 Steps to reproduce:
   1. Open `https://auth-home-task.vercel.app/`
   2. Click the `Go to Registration` button
-  3. Click the `Register` button
+  3. Enter any text for the `Confirm Password` input field
+  4. Click the `Register` button
 
-Expected result: 
-Input fields are highlighted
+Expected result: Input fields are highlighted
 
-Actual result: 
-Input fields are not highlighted
+Actual result: Input fields are not highlighted
 
 <img src="https://github.com/user-attachments/assets/721dce75-59a9-4a25-b5fd-f79b2f34f537">
 
 ---
 
-Bug ID: 2 (TODO)
+Bug ID: 2
 
 Title: Input fields have a incorrect texts displayed when input validation fails
 
@@ -90,19 +89,28 @@ Env:
   2. Browser: Version 1.78.102 Chromium: 136.0.7103.113 (Official Build) (64-bit)
 
 Steps to reproduce:
-  todo
+  1. Open `https://auth-home-task.vercel.app/`
+  2. Click the `Go to Registration` button
+  3. Enter any text for the `Confirm Password` input field
+  4. Click the `Register` button
 
 Expected result: 
-  todo
+  1. Username input error text should be: "Must be between 3 and 20 characters. Only alphanumeric characters (letters and numbers) are allowed."
+  2. Email input error text should be: "Must be a valid email format (e.g., example@domain.com)."
+  3. Password input error text should be: "Must be at least 8 characters long. Must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number."
+  4. Confirm password input error text should be: "Must match the value entered in the Password field."
 
 Actual result:
-  todo
+  1. Username input error text is displayed as: "Username must be 3-20 alphanumeric characters."
+  2. Email input error text is displayed as: "Invalid email format."
+  3. Password input error text is displayed as: "Password must be at least 8 characters with 1 uppercase, 1 lowercase, and 1 number."
+  4. Confirm password input error text is displayed as: "Passwords do not match."
 
-<img src="https://github.com/user-attachments/assets/f7dbe715-03e2-4059-afeb-c50046b2df51" width="450" height="450">
+<img src="https://github.com/user-attachments/assets/721dce75-59a9-4a25-b5fd-f79b2f34f537">
 
 ---
 
-Bug ID: 3 (TODO)
+Bug ID: 3
 
 Title: Browser email validation blocks other input field errors when clicking the register button
 
@@ -111,16 +119,21 @@ Env:
   2. Browser: Version 1.78.102 Chromium: 136.0.7103.113 (Official Build) (64-bit)
 
 Steps to reproduce:
+  1. Open `https://auth-home-task.vercel.app/`
+  2. Click the `Go to Registration` button
+  3. Enter "aaa" text for the `Email` input field
+  4. Enter "s" text for the `Username` intpu field
+  5. Click the `Register` button
 
- todo
+Expected result: After the Register button is clicked, validation error messages should be displayed for all invalid fields.
 
-Expected result: 
-todo
-
-Actual result: 
-todo
+Actual result: Until Email field is resolved user won't see other validation error messages.
 
 <img src="https://github.com/user-attachments/assets/4a5af71c-ccc7-42a6-bb8e-e04851ce5ddd" width="450" height="450">
+
+Video:
+
+https://github.com/user-attachments/assets/268eb395-b023-4fc3-842d-2d81b50d2ade
 
 # Task 3: Based on requirements automate 1 manual test case using playwright
   TODO
