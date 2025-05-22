@@ -1,7 +1,7 @@
 import { type Locator, type Page } from '@playwright/test';
 import 'dotenv/config';
 
-export class RegisterPage {
+export class RegistrationPage {
     readonly username: Locator;
     readonly email: Locator;
     readonly password: Locator;
