@@ -136,7 +136,7 @@ Video:
 https://github.com/user-attachments/assets/268eb395-b023-4fc3-842d-2d81b50d2ade
 
 # Task 3: Based on requirements automate 1 manual test case using playwright
-  TODO
+  DONE
 # Task 4: Add points to improve form's UI/UX
 Suggested improvments:
   1. Add an option to "Show Password" for the Password and Confirm Password fields.
